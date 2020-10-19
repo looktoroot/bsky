@@ -8,15 +8,45 @@
     <title>bsky</title>
 <!--    <link rel="icon" href="images/favicon.png" type="image/png">-->
 </head>
-<body class="page">
-    <header class="header">
-        bsky header
-    </header>
-    <main class="main">
-        bsky main
-    </main>
-    <footer class="footer">
-        bsky footer
-    </footer>
+<body class="layout">
+    <div class="layout__header">
+        <header class="header">
+            <div class="header__inner container">
+                <a class="logo" href="/">
+                    <span class="logo__first">BOLSHAKOV</span><span class="logo__second">SKY</span>
+                </a>
+                <ul class="header-nav">
+                    <li class="header-nav__item">
+                        Статьи
+                    </li>
+                    <li class="header-nav__item">
+                        Проекты
+                    </li>
+                    <li class="header-nav__item">
+                        Обо мне
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="layout__main">
+        <div class="layout__content">
+            <main class="main container">
+                <div class="main__content">
+                    content
+                </div>
+                <aside class="main__sidebar">
+                    sidebar
+                </aside>
+            </main>
+        </div>
+        <div class="layout__footer">
+            <footer class="footer">
+                <div class="footer__inner container">
+                    footer
+                </div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

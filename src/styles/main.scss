@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+
+  &__content {
+    width: 100%;
+  }
+
+  &__sidebar {
+    width: $sidebar-width;
+    flex-shrink: 0;
+  }
+}
