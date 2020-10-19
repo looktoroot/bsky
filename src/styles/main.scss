@@ -1,12 +1,16 @@
 .main {
   display: flex;
+  background-color: #fff;
+  height: 100%;
 
   &__content {
+    padding: 15px;
     width: 100%;
   }
 
   &__sidebar {
     width: $sidebar-width;
+    padding: 15px;
     flex-shrink: 0;
   }
 }

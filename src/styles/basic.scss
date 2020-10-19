@@ -27,6 +27,15 @@ img {
   height: auto;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: $hover-opacity;
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -34,6 +43,14 @@ img {
 
 @mixin openSans {
   font-family: "open sans", Arial, sans-serif;
+}
+
+@mixin roboto {
+  font-family: "roboto", Arial, sans-serif;
+}
+
+@mixin bigShouldersText {
+  font-family: "big shoulders text", Arial, sans-serif;
 }
 
 

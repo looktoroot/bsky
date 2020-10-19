@@ -1,7 +1,55 @@
 @font-face {
   font-family: "open sans";
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "big shoulders text";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/BigShouldersText-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "big shoulders text";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/BigShouldersText-Bold.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "big shoulders text";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/BigShouldersText-Black.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2")
 }

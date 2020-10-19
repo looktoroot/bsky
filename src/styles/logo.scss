@@ -1,3 +1,25 @@
 .logo {
+  $root: &;
 
+  @include bigShouldersText;
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #000;
+
+  &_inverted {
+    color: #fff;
+
+    #{$root}__second {
+      color: #000;
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__second {
+    color: #fff;
+  }
 }

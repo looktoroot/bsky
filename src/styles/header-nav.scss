@@ -5,9 +5,17 @@
   display: flex;
   align-items: center;
 
+  @include roboto;
+  font-size: 20px;
+  font-weight: 500;
+
   &__item {
     &:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 30px;
     }
+  }
+
+  &__link {
+
   }
 }

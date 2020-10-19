@@ -1,4 +1,11 @@
 .footer {
   background-color: $primary;
-  height: $footer-height;
+
+  &__inner {
+    padding: 15px;
+    height: $footer-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
