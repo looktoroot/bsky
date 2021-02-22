@@ -4,4 +4,4 @@ dist/
 *.log
 *.map
 .DS_Store
-/config.php
+

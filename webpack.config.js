@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -21,21 +21,17 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: 'babel-loader'
                 }
             },
             {
                 test: /\.scss$/,
                 use: [
-                    {
-                      loader: 'css-hot-loader'
-                    },
                     MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader'
                     },
                     {
-                        // TODO add autoprefixer plugin to postcss.config.js see webpack console message
                         loader: 'postcss-loader',
                     },
                     {
@@ -69,17 +65,10 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'style.css',
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: 'src/images',
-                    to: 'images',
-                },
-            ]
-        }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html'
         }),
+        new CleanWebpackPlugin(),
     ]
 };
